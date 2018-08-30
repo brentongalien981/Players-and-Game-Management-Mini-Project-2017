@@ -1,0 +1,21 @@
+USE [JavaAssignment5]
+GO
+
+/****** Object:  Table [dbo].[Game]    Script Date: 12/8/2016 6:12:42 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Game](
+	[game_Id] [int] IDENTITY(1,1) NOT NULL,
+	[game_title] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_Game] PRIMARY KEY CLUSTERED 
+(
+	[game_Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
